@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="validation.js"></script>
+<title>Beautiful Resume Form</title>
+</head> <center>
+<div class="jumbotron">
+  <h1> Beautiful Resume Form </center> </h1>
+</div> 
+<body>
+<!--<div class="container"> -->
+<div class="container " >
+ <div class="panel panel-default bg-grey">
+  <div class="panel-heading"> <center> <kbd> Fill this form to level up your career
+  </center></kbd></div>
+  
+
+<br><br>
+<form class="form-inline" name="resume" onsubmit="return validateForm()" method = "get">
+ <h3>  Name: </h3>
+  <h4 class="text-info"> 
+   First name: 
+  <input type="text" name="firstname" required> 
+  Last name: 
+  <input type="text" name="lastname" required> 
+  </h4>
+ <h3> Gender:  </h3>
+  <h4 class="text-info"> 
+    <input type="radio" name="gender" value="male" > Male
+    <input type="radio" name="gender" value="female" > Female
+    <input type="radio" name="gender" value="others" > Others
+  </h4> 
+
+  <h3>  Skills:  </h3>
+  <h4 class="text-info">
+  <input type="checkbox" name="C" value="C"> C 
+  <input type="checkbox" name="C++" value="C++"> C++ 
+  <input type="checkbox" name="Java" value="Java"> Java 
+  </h4>
+<h3>
+ Contact number:  <input type="text" name="contact" maxlength="10">
+</h3> 
+<br>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Degree</td>
+        <td>B.E</td>
+        
+      </tr>
+      <tr>
+        <td>Year Of Passing</td>
+        <td>2017</td>
+        
+      </tr>
+      <tr>
+        <td>CGPA</td>
+        <td>9.5</td>
+        
+      </tr>
+
+      <tr>
+        <td>College Name</td>
+        <td>APEC</td>
+        
+      </tr>
+
+    </tbody>
+  </table>
+<blockquote> <input type="checkbox" name="declare" value="declare" required> I hereby declare that all the above furnished details are true to that of my knowledge.</blockquote>
+
+<br><br>
+<center> <input type="submit" class="btn btn-danger" value="Submit"> </center>
+</form>
+</div>
+ </div>
+ 
+</body>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
